@@ -5,13 +5,13 @@ local solid = 157059515
     local value = redis:hget(hash, msg.from.id)
      if not value then
         if msg.from.id == tonumber(solid) then 
-           text = text..'\n\n'
+           text = text..'سلام\n\n'
          elseif is_admin2(msg.from.id) then
-           text = text..'\n\n'
+           text = text..'سلام\n\n'
          elseif is_owner2(msg.from.id, msg.to.id) then
-           text = text..'\n\n'
+           text = text..'س\n\n'
          elseif is_momod2(msg.from.id, msg.to.id) then
-           text = text..'\n\n'
+           text = text..'س\n\n'
      else
            text = text..'\n\n'
       end
